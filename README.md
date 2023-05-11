@@ -11,11 +11,10 @@ akhilarunachalam@Akhils-MacBook-Air-6 URL_Shortener % python3 url.py
 ```
 
 After typing in the command, the following output will display information such
-as where the script is running on the local machine. This url will be used to 
-test if the endpoints work as expected. The following is where the project was
-running on in my machine. We will be testing the code by pasting the url and the
-specified endpoint on a web browser such as Google Chrome to see if the script
-works as expected.
+as where the script is running on the local machine. The following url is where 
+the project was running on in my machine. We will be testing the code by 
+pasting the url, the specified endpoint, and proper parameters on a web browser 
+such as Google Chrome to see if the script works as expected.
 
 ```console
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

@@ -25,6 +25,8 @@ works as expected.
 This endpoint expects a parameter, `url`, for the url that is expected to be
 encoded. If no `url` parameter is passed in, in an error will be thrown.
 
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "No Url Parameter")
+
 If a parameter is passed in, then the encoded url will be displayed in JSON
 format.
 

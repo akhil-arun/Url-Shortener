@@ -84,7 +84,7 @@ def decode():
     if result:
         long_url = result[0]
     else:
-        return jsonify({'error': 'Mapping from this url to an original url does not exist'}), 400
+        return jsonify({'error': 'A mapping from this url to an original url does not exist'}), 400
 
     conn.close()
     

@@ -41,7 +41,7 @@ def encode():
     c = conn.cursor()
 
     # Check if the long URL already exists in the database
-    c.execute("SELECT short_url FROM urls WHERE long_url=?", (long_url,))
+    c.execute("SELECT short_url FROM url WHERE long_url=?", (long_url,))
     
     # Get the first row of the result
     result = c.fetchone()
@@ -55,7 +55,7 @@ def encode():
         
         # Shorten the url and add the mapping to the database
         short_url = shorten_url(len(long_url))
-        c.execute("INSERT INTO urls (long_url, short_url) VALUES (?, ?)",
+        c.execute("INSERT INTO url (long_url, short_url) VALUES (?, ?)",
                   (long_url, short_url))
         conn.commit()
     
@@ -76,7 +76,7 @@ def decode():
     c = conn.cursor()
 
     # Check if the short URL exists in the database
-    c.execute("SELECT long_url FROM urls WHERE short_url=?", (short_url,))
+    c.execute("SELECT long_url FROM url WHERE short_url=?", (short_url,))
     result = c.fetchone()
     long_url = ""
 
@@ -84,7 +84,7 @@ def decode():
     if result:
         long_url = result[0]
     else:
-        return jsonify({'error': 'Mapping to Longer url does not exist'}), 400
+        return jsonify({'error': 'Mapping from this url to an original url does not exist'}), 400
 
     conn.close()
     

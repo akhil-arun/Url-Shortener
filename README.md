@@ -1,5 +1,5 @@
 # URL Shortener
-I implemented this project using Python as the langauge, and Flask as the
+I implemented this API using Python as the langauge, and Flask as the
 framework. I also made a database using SQLite to keep track of the mappings
 from the encoded url to the original url.
 
@@ -14,7 +14,7 @@ After typing in the command, the following output will display information such
 as where the script is running on the local machine. The following url is where 
 the project was running on in my machine. We will be testing the code by 
 pasting the url, the specified endpoint, and proper parameters on a web browser 
-such as Google Chrome to see if the script works as expected.
+such as Google Chrome to see if the API works as expected.
 
 ```console
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)

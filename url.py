@@ -11,7 +11,7 @@ def create_table():
     # SQLite Database setup if required
     conn = sqlite3.connect(DB_NAME)
     c = conn.cursor()
-    c.execute("CREATE TABLE IF NOT EXISTS urls (id INTEGER PRIMARY KEY AUTOINCREMENT, long_url TEXT NOT NULL, short_url TEXT NOT NULL)")
+    c.execute("CREATE TABLE IF NOT EXISTS url (id INTEGER PRIMARY KEY AUTOINCREMENT, long_url TEXT NOT NULL, short_url TEXT NOT NULL)")
     conn.commit()
     conn.close()
 

@@ -22,12 +22,12 @@ such as Google Chrome to see if the API works as expected.
 
 ## `encode` Endpoint
 This endpoint expects a parameter, `url`, for the url that is expected to be
-encoded. If no `url` parameter is passed in, in an error will be thrown.
+encoded. If no `url` parameter is passed in, an error will be thrown.
 
 ![alt text](https://github.com/akhiller30/Url_shortener/blob/main/Images/No_parameter.png "No Url Parameter")
 
-If a parameter is passed in, then the encoded url will be displayed in JSON
-format.
+If the url parameter is passed in, then the encoded url will be displayed in 
+JSON format.
 
 ![alt text](https://github.com/akhiller30/Url_shortener/blob/main/Images/Encode.png "Encode success")
 
@@ -35,8 +35,8 @@ format.
 Similar to the `encode` endpoint, this endpoint requires a parameter to be 
 passed in as well.
 
-If a parameter is passed in, then the decoded url will be displayed in JSON
-format.
+If the url parameter is passed in, then the decoded url will be displayed in 
+JSON format.
 
 ![alt text](https://github.com/akhiller30/Url_shortener/blob/main/Images/Decode.png "Decode success")
 
